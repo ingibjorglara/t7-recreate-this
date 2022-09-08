@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+
+
+header {
+    background-color: rgb(243, 114, 85);
+    border: 2px solid blue;
+    padding-bottom: 2rem;
+}
+
+nav {
+    font-size: 1rem;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between; */
+    display: grid;
+    grid-column: 1fr 1fr 1fr;
+    background-color: rgb(244, 146, 124);
+    border-radius: 10px
+}
+
+a {
+    text-decoration: none;
+    padding: 1rem;
+    color: rgb(254, 253, 253);
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    margin: 0;
+}
+
+.timer {
+    border: 2px solid purple;
+    width: 400px;
+    height: 300px;
+    text-align: center;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    font-weight: 600;
+
+}
+
+.timer p {
+    font-size: 3.5rem;
+}
+
+.button_start {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+button {
+    width: 200px;
+    height: 55px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    border-color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: rgb(243, 114, 85);
+}
+
+.workingon {
+    border: 2px solid purple;
+    width: 400px;
+    height: 60px;
+    text-align: center;
+    margin: auto;
+}
+
+.tasks {
+    border: 2px solid purple;
+    width: 400px;
+    height: 100px;
+    text-align: center;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.maintask {
+    grid-row: 1;
+}
+
+.task1 {
+    grid-row: 2;
+    background-color: aliceblue;
+}
+
+.task2 {
+    grid-row: 3;
+}
+
+.addtask {
+    grid-row: 4;
+
+}
+
+.maincontent {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 0.5rem;
+}
+
+.maincontent>* {
+    min-height: 100px;
+    border: 2px solid hotpink;
+}
+
+footer {
+    border: 2px solid greenyellow;
+    text-align: center;
+    margin: auto;
+}
+
+/* Main ::content */
+@media only screen and (min-width: 600px) {
+
+    .maincontent {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
